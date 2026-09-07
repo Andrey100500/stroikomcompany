@@ -1,0 +1,91 @@
+AddDefaultCharset UTF-8
+
+# Отключаем ETag (ускоряет повторную загрузку, убирая лишние запросы 304)
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+RewriteEngine On
+RewriteBase /
+
+# 1. Постраничные редиректы
+Redirect 301 /page/8 https://stroikomcompany.ru/index
+Redirect 301 /page/1 https://stroikomcompany.ru/construction_repair
+Redirect 301 /page/2 https://stroikomcompany.ru/construction_repair
+Redirect 301 /page/3 https://stroikomcompany.ru/dump_truck_rental
+Redirect 301 /page/4 https://stroikomcompany.ru/index
+Redirect 301 /page/5 https://stroikomcompany.ru/product
+Redirect 301 /page/6 https://stroikomcompany.ru/product#aerated-concrete
+Redirect 301 /page/7 https://stroikomcompany.ru/product#vibro-materials
+Redirect 301 /page/9 https://stroikomcompany.ru/index
+Redirect 301 /page/10 https://stroikomcompany.ru/objects
+Redirect 301 /page/11 https://stroikomcompany.ru/realty
+Redirect 301 /page/12 https://stroikomcompany.ru/about
+Redirect 301 /page/13 https://stroikomcompany.ru/about
+Redirect 301 /page/14 https://stroikomcompany.ru/about
+Redirect 301 /page/16 https://stroikomcompany.ru/about
+Redirect 301 /page/17 https://stroikomcompany.ru/medias
+Redirect 301 /page/18 https://stroikomcompany.ru/design
+Redirect 301 /page/19 https://stroikomcompany.ru/engineering_surveys
+Redirect 301 /page/20 https://stroikomcompany.ru/product#sand-blocks
+Redirect 301 /page/21 https://stroikomcompany.ru/product#sand-blocks
+Redirect 301 /page/22 https://stroikomcompany.ru/product#sand-blocks
+Redirect 301 /page/23 https://stroikomcompany.ru/product#sand-blocks
+Redirect 301 /page/24 https://stroikomcompany.ru/product#paving-slabs
+Redirect 301 /page/25 https://stroikomcompany.ru/product#paving-slabs
+Redirect 301 /page/26 https://stroikomcompany.ru/product#paving-slabs
+Redirect 301 /page/27 https://stroikomcompany.ru/product#paving-slabs
+Redirect 301 /page/28 https://stroikomcompany.ru/product#curbs
+Redirect 301 /page/29 https://stroikomcompany.ru/product#curbs
+Redirect 301 /page/30 https://stroikomcompany.ru/product#curbs
+Redirect 301 /page/31 https://stroikomcompany.ru/product
+Redirect 301 /page/32 https://stroikomcompany.ru/product#bricks
+Redirect 301 /page/33 https://stroikomcompany.ru/dump_truck_rental
+
+# 2. Скрытие расширения .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L]
+
+## COMPRESSION ##
+<IfModule mod_deflate.c>
+  # Сжатие HTML, CSS, JavaScript, Text, XML и шрифтов
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Удаление ошибок в старых браузерах
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+## COMPRESSION ##
+
+## CACHING ##
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(avif|webp|jpg|jpeg|gif|png|ico|css|js|woff2|cur|woff|mp4)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 hour"
+</filesmatch>
+</ifmodule>
+## CACHING ##

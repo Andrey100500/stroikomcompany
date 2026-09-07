@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Проектирование зданий и инженерных систем в Чите | ООО Стройком</title>
+    <meta name="Keywords" content="проектирование зданий Чита, инженерные изыскания, архитектурные решения, генпроектировщик, проекты жилых домов, промышленных объектов, ООО Стройком, Забайкальский край">
+    <meta name="description" content="Проектный отдел ООО «Стройком» в Чите. Проектирование промышленных и гражданских объектов, инженерных систем (отопление, водоснабжение, ИТП). Работаем как генпроектировщик. Соответствие СНиП.">
+    <link rel="icon" href="https://stroikomcompany.ru/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+</head>
+<link rel="preload" href="img/images/main_bg_top.avif" as="image" type="image/jpeg" fetchpriority="high">
+<link rel="preload" href="css/allStyle.css" as="style">
+<link rel="preload" href="css/Gilroy-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="css/Gilroy-Light.woff2" as="font" type="font/woff" crossorigin>
+
+<style>
+/* 2. Объявляем шрифты */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('css/Gilroy-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('css/Gilroy-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal; 
+    font-display: swap;
+}
+
+/* Показать текст сразу */
+body {
+    font-family: 'Gilroy', sans-serif;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/allStyle.css">
+<script src="js/bootstrap.bundle.min.js" defer></script>
+
+<body>
+
+    <div class="main-bg">
+        <header>
+    <div class="container">
+        <div class="row py-3 align-items-center">
+
+            <div class="col-auto">
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.1 30.4" width="70" height="61">
+                        <path fill="#000" d="M0 30.4L17.5 0l17.6 30.4H0z" />
+                        <path fill="#FFF" d="M15.5 6l2-3.5 6.3 10.9 6.4 10.9h-12.7l-1.5 0 2-3.5h6l-4.2-7.4z" />
+                        <path fill="#D52B1E" d="M30.9 25.6l2 3.5H20.3H7.7l6.3-10.9.8-1.4 2 3.5-3 5.3h8.6z" />
+                        <path fill="#1679DE" d="M6.3 29.1H2.2l6.3-10.9L14.8 7.3l6.3 10.9.8 1.4h-4.1l-3-5.3-4.3 7.5z" />
+                    </svg>
+
+                    <div class="ms-3 d-flex flex-column justify-content-center pt-3" style="line-height: 1.1;">
+                        <span class="fw-bold text-dark"
+                            style="font-size: 2rem; letter-spacing: 0px; text-transform: uppercase;">СТРОЙКОМ</span>
+                        <span class="text-muted text-uppercase"
+                            style="font-size: 0.6rem; letter-spacing: 0.5px; font-weight: 300; white-space: nowrap;">многопрофильная
+                            компания</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col d-none d-xl-block">
+                <div class="ps-5 border-start border-light border-opacity-10">
+                    <div class="d-flex align-items-center gap-2 mb-2 header-info-item transition-all">
+                        <div class="p-1 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center text-primary"
+                            style="width: 24px; height: 24px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>
+                        </div>
+                        <span class="text-dark small fw-bold text-uppercase"
+                            style="letter-spacing: 0.5px; font-size: 0.8rem;">
+                            г. Чита, ул. Забайкальского Рабочего, 71а
+                        </span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-4 header-info-item">
+                        <div class="d-flex align-items-center">
+                            <div class="lh-1">
+                                <small class="text-muted d-block mb-1"
+                                    style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Работаем</small>
+                                <span class="small fw-bold text-dark border-bottom border-primary border-2">Пн-Пт:
+                                    08:00 – 17:00</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center border-start border-light border-opacity-25 ps-4">
+                            <div class="lh-1">
+                                <small class="text-muted d-block mb-1"
+                                    style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Перерыв</small>
+                                <span class="small fw-semibold text-secondary text-nowrap">12:00 – 13:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto ms-auto d-none d-md-block">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="d-flex text-dark" style="width: 52px; height: 52px; vertical-align: middle;">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.87 32a17.67 17.67 0 0 1 0-25" />
+                            <path d="M20 26.87a10.41 10.41 0 0 1 0-14.71" />
+                            <path d="m28 30-5.43 5.43a8.77 8.77 0 0 0-2.57 6.2V52" />
+                            <path
+                                d="M40 56h9a3 3 0 0 0 3-3V19a3 3 0 0 0-3-3H31a3 3 0 0 0-3 3v19.33a2 2 0 0 0 3.42 1.42l4.46-4.45a3.23 3.23 0 0 1 4.41-.24 3.12 3.12 0 0 1 .12 4.53l-3.29 3.29a9.83 9.83 0 0 0-2.88 7 6.25 6.25 0 0 1-6.24 6.2" />
+                            <line x1="39" y1="52" x2="41" y2="52" />
+                            <line x1="36" y1="20" x2="44" y2="20" />
+                        </svg>
+                    </span>
+
+                    <div class="d-flex flex-column">
+                        <a href="tel:+73022266866" class="header-contact-link ">
+                            8 (3022) 266-866
+                        </a>
+                        <a href="tel:+79248115588" class="header-contact-link ">
+                            8 (924) 811-55-88
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+        <nav class="custom-navbar">
+    <div class="container">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть основное меню">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <div class="menu-drawer" id="menuDrawer">
+            <div class="drawer-header">
+                <span class="drawer-title">Навигация</span>
+                <button class="close-btn" id="closeMenu">&times;</button>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-trigger">Наши услуги</button>
+                    <ul class="dropdown-content">
+                        <li><a href="construction_repair">Строительство и ремонт</a></li>
+                        <li><a href="design">Проектирование</a></li>
+                        <li><a href="engineering_surveys">Инженерные изыскания</a></li>
+                        <li><a href="dump_truck_rental">Аренда самосвалов</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-trigger">Продукция</button>
+                    <ul class="dropdown-content">
+                        <li><a href="product#aerated-concrete">Газобетон</a></li>
+                        <li><a href="product#paving-slabs">Тротуарная плитка</a></li>
+                        <li><a href="product#sand-blocks">Пескоблоки</a></li>
+                        <li><a href="product#bricks">Кирпичи</a></li>
+                        <li><a href="product#curbs">Бордюры</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="objects">Объекты</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="realty">Продажа недвижимости</a>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-trigger">О компании</button>
+                    <ul class="dropdown-content">
+                        <li><a href="about">О компании</a></li>
+                        <li><a href="medias">Мы в СМИ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('menuToggle');
+        const drawer = document.getElementById('menuDrawer');
+        const overlay = document.getElementById('menuOverlay');
+        const close = document.getElementById('closeMenu');
+
+        // Функции открытия/закрытия
+        const openMenu = () => {
+            drawer.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeMenu = () => {
+            drawer.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        // Слушатели событий
+        toggle?.addEventListener('click', openMenu);
+        close?.addEventListener('click', closeMenu);
+        overlay?.addEventListener('click', closeMenu);
+
+        // Аккордеон для мобильных выпадающих списков
+        document.querySelectorAll('.dropdown-trigger').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (window.innerWidth < 992) {
+                    const parent = btn.parentElement;
+                    parent.classList.toggle('open');
+                }
+            });
+        });
+    });
+</script>
+        <div class="wave-divider">
+    <svg viewBox="0 0 1200 35" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0,0 L12,30 L24,0 L36,30 L48,0 L60,30 L72,0 L84,30 L96,0 L108,30 L120,0 L132,30 L144,0 L156,30 L168,0 L180,30 L192,0 L204,30 L216,0 L228,30 L240,0 L252,30 L264,0 L276,30 L288,0 L300,30 L312,0 L324,30 L336,0 L348,30 L360,0 L372,30 L384,0 L396,30 L408,0 L420,30 L432,0 L444,30 L456,0 L468,30 L480,0 L492,30 L504,0 L516,30 L528,0 L540,30 L552,0 L564,30 L576,0 L588,30 L600,0 L612,30 L624,0 L636,30 L648,0 L660,30 L672,0 L684,30 L696,0 L708,30 L720,0 L732,30 L744,0 L756,30 L768,0 L780,30 L792,0 L804,30 L816,0 L828,30 L840,0 L852,30 L864,0 L876,30 L888,0 L900,30 L912,0 L924,30 L936,0 L948,30 L960,0 L972,30 L984,0 L996,30 L1008,0 L1020,30 L1032,0 L1044,30 L1056,0 L1068,30 L1080,0 L1092,30 L1104,0 L1116,30 L1128,0 L1140,30 L1152,0 L1164,30 L1176,0 L1188,30 L1200,0 V120 H0 Z"
+            fill="#FFFFFF"></path>
+    </svg>
+</div>
+    </div>
+    <main>
+        <div class="container py-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item">
+                        <a href="index.html"
+                            class="link-primary text-decoration-none link-underline-opacity-0 link-underline-opacity-100-hover">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active fw-semibold" aria-current="page">Проектирование</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="ui-page-header mb-5">
+                        <div class="ui-header-content">
+                            <div class="ui-header-marker"></div>
+                            <div class="ui-header-text">
+                                <h1 class="display-6 fw-bold mb-1">Проектирование</h1>
+                                <p class="ui-page-subtitle mb-0 text-muted">Инженерные изыскания и архитектурные решения
+                                    любой сложности</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="mb-5">
+                        <div class="row g-4">
+                            <div class="col-lg-8">
+                                <p class="fs-5 text-muted mb-4">
+                                    Проектный отдел <strong>ООО «Стройком»</strong> занимается проектированием зданий и
+                                    сооружений промышленного и гражданского назначения.
+                                </p>
+                                <p class="text-secondary mb-3">
+                                    При проектировании мы максимально учитываем пожелания Заказчика, возможности
+                                    современных строительных технологий и накопленный опыт.
+                                    Любой вид работ может быть выполнен как в комплексе (Генеральный проектировщик), так
+                                    и в качестве самостоятельной услуги.
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <div
+                                    class="ui-status-card p-4 rounded-4 border-0 shadow-sm h-100 d-flex flex-column justify-content-center bg-light">
+                                    <h5 class="fw-bold text-primary mb-2">Технологии</h5>
+                                    <p class="small text-muted mb-0">Используем современные программные комплексы. Все
+                                        компьютерные расчеты строго соответствуют СНиП.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="my-5 opacity-10">
+
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4 d-flex align-items-center gap-2">
+                            <span class="text-primary">#</span> Направления работы
+                        </h2>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div
+                                    class="service-card p-4 h-100 bg-white border rounded-4 transition shadow-sm-hover">
+                                    <div class="service-num mb-3">01</div>
+                                    <h4 class="h5 fw-bold text-dark mb-3">Инженерные системы</h4>
+                                    <p class="small text-muted">
+                                        — Отопление и тепловые сети<br>
+                                        — Водоснабжение и водоотведение<br>
+                                        — ИТП и узлы учета (УУТЭ)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div
+                                    class="service-card p-4 h-100 bg-white border rounded-4 transition shadow-sm-hover">
+                                    <div class="service-num mb-3">02</div>
+                                    <h4 class="h5 fw-bold text-dark mb-3">Гражданские объекты</h4>
+                                    <p class="small text-muted">
+                                        — ТРЦ, рынки и кинотеатры<br>
+                                        — Школы, детские сады, больницы<br>
+                                        — Жилые дома и поселки
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div
+                                    class="service-card p-4 h-100 bg-white border rounded-4 transition shadow-sm-hover">
+                                    <div class="service-num mb-3">03</div>
+                                    <h4 class="h5 fw-bold text-dark mb-3">Промышленные объекты</h4>
+                                    <p class="small text-muted">
+                                        — Заводы и производственные корпуса<br>
+                                        — Склады, ангары и автоцентры<br>
+                                        — Многоярусные парковки
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-light p-4 p-lg-5 rounded-4 mb-5">
+                        <h2 class="h3 fw-bold mb-4">Особые компетенции</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex gap-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-primary" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 1 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Генеральное проектирование</h6>
+                                        <p class="small text-muted">Полный контроль над всеми архитектурными и
+                                            конструктивными разделами проекта.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex gap-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-primary" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 1 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Жилой фонд и ЖКХ</h6>
+                                        <p class="small text-muted">Проекты строительства многоквартирных домов, кап.
+                                            ремонта и мансардных этажей.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="text-center py-4">
+                        <p class="ui-page-subtitle mb-3 text-muted">Обсудить ваш проект</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="tel:+73022266866" class="btn ui-btn-premium">
+                                <span class="ui-btn-content">
+                                    <span class="ui-btn-text-wrap">
+                                        <small class="ui-btn-label">Позвонить</small>
+                                        <span class="ui-btn-number">8 (3022) 266-866</span>
+                                    </span>
+                                    <span class="ui-btn-icon-box">
+                                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14.87 32a17.67 17.67 0 0 1 0-25"></path>
+                                            <path d="M20 26.87a10.41 10.41 0 0 1 0-14.71"></path>
+                                            <path d="m28 30-5.43 5.43a8.77 8.77 0 0 0-2.57 6.2V52"></path>
+                                            <path
+                                                d="M40 56h9a3 3 0 0 0 3-3V19a3 3 0 0 0-3-3H31a3 3 0 0 0-3 3v19.33a2 2 0 0 0 3.42 1.42l4.46-4.45a3.23 3.23 0 0 1 4.41-.24 3.12 3.12 0 0 1 .12 4.53l-3.29 3.29a9.83 9.83 0 0 0-2.88 7 6.25 6.25 0 0 1-6.24 6.2">
+                                            </path>
+                                            <line x1="39" y1="52" x2="41" y2="52"></line>
+                                            <line x1="36" y1="20" x2="44" y2="20"></line>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-dark mt-5">
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">Услуги</div>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="construction_repair">Строительство и ремонт</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">Наша продукция</div>
+                    <ul class="list-unstyled footer-links">
+                        <li><a class="dropdown-item" href="product#aerated-concrete">Газобетон</a></li>
+                        <li><a class="dropdown-item" href="product#paving-slabs">Тротуарная плитка</a></li>
+                        <li><a class="dropdown-item" href="product#sand-blocks">Пескоблоки</a></li>
+                        <li><a class="dropdown-item" href="product#bricks">Кирпичи</a></li>
+                        <li><a class="dropdown-item" href="product#curbs">Бордюры</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">О компании</div>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="objects">Наши объекты</a></li>
+                        <li><a href="realty">Продажа недвижимости</a></li>
+                        <li><a href="about">О нас</a></li>
+                        <li><a class="dropdown-item" href="medias">Мы в СМИ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-heading">Контакты</div>
+                    <div class="d-flex align-items-center mb-3">
+
+
+
+                        <span class="me-2 footer-icon-light d-inline-block"
+                            style="width: 48px; height: 48px; vertical-align: middle;">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.87 32a17.67 17.67 0 0 1 0-25" />
+                                <path d="M20 26.87a10.41 10.41 0 0 1 0-14.71" />
+                                <path d="m28 30-5.43 5.43a8.77 8.77 0 0 0-2.57 6.2V52" />
+                                <path
+                                    d="M40 56h9a3 3 0 0 0 3-3V19a3 3 0 0 0-3-3H31a3 3 0 0 0-3 3v19.33a2 2 0 0 0 3.42 1.42l4.46-4.45a3.23 3.23 0 0 1 4.41-.24 3.12 3.12 0 0 1 .12 4.53l-3.29 3.29a9.83 9.83 0 0 0-2.88 7 6.25 6.25 0 0 1-6.24 6.2" />
+                                <line x1="39" y1="52" x2="41" y2="52" />
+                                <line x1="36" y1="20" x2="44" y2="20" />
+                            </svg>
+                        </span>
+
+
+                        <a href="tel:+73022266866" class="footer-contact-link">8 (3022) 266-866</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill me-2 text-primary" viewBox="0 0 16 16"
+                            style="vertical-align: -0.125em;">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                        <a href="mailto:stroikomvb2012@yandex.ru"
+                            class="footer-contact-link fw-light">stroikomvb2012@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-legal py-2">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="copyright-text">© 2026 stroikomcompany.ru — ООО “Стройком”</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index" class="policy-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-to-top shadow" id="btnToTop" aria-label="Наверх">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+    </svg>
+</button>
+
+<script>
+    const btnToTop = document.getElementById("btnToTop");
+
+    // Показываем кнопку при скролле вниз на 300px
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btnToTop.style.display = "flex";
+        } else {
+            btnToTop.style.display = "none";
+        }
+    };
+
+    // Плавный скролл наверх
+    btnToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+    <style>
+    /* 1. Основной контейнер блока */
+    .developer-footer-block {
+        background-color: #1a1a1a;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 10px 15px -10px rgba(0, 0, 0, 0.5);
+        transition: all 0.4s ease;
+        /* cursor: pointer; */
+        overflow: hidden;
+    }
+
+    .developer-footer-block:hover {
+        background-color: #1f1f1f;
+        border-top-color: rgba(0, 160, 227, 0.4);
+    }
+
+    /* 2. Логотип Sfera */
+    .developer-footer-block svg.sfera-logo {
+        filter: grayscale(1) opacity(0.5);
+        transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .developer-footer-block:hover svg.sfera-logo {
+        filter: grayscale(0) opacity(1);
+        transform: scale(1.25);
+        filter: drop-shadow(0 0 12px rgba(0, 160, 227, 0.6));
+    }
+
+    /* 3. Текстовые элементы */
+    .developer-footer-block .label-text {
+        transition: opacity 0.4s ease;
+        opacity: 0.5;
+    }
+
+    .developer-footer-block:hover .label-text {
+        opacity: 1;
+    }
+
+    .developer-footer-block .brand-text {
+        transition: color 0.4s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .developer-footer-block:hover .brand-text {
+        color: #00A0E3 !important;
+    }
+
+    .developer-footer-block .brand-text::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background: #00A0E3;
+        transition: all 0.4s ease;
+        transform: translateX(-50%);
+    }
+
+    .developer-footer-block:hover .brand-text::after {
+        width: 100%;
+    }
+
+    /* 4. Индикатор "Поддержка 24/7" */
+    .support-status {
+        opacity: 0;
+        transform: translateX(-15px);
+        transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        display: flex !important;
+        align-items: center;
+        line-height: 1;
+        visibility: hidden;
+    }
+
+    .developer-footer-block:hover .support-status {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    /* Объемная радиальная точка */
+    .status-dot {
+        position: relative;
+        width: 8px;
+        height: 8px;
+        background: radial-gradient(circle at 30% 30%, #a8ffb5 0%, #28a745 60%, #1a702d 100%);
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+        flex-shrink: 0;
+    }
+
+    .status-dot::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(40, 167, 69, 0.6);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse-wave 1.5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    @keyframes pulse-wave {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(3.5);
+            opacity: 0;
+        }
+    }
+
+    /* Начальное состояние формы (скрыта ниже экрана) */
+    #bottomFormPanel {
+        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        z-index: 1050;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    /* Класс для отображения */
+    #bottomFormPanel.show-panel {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<div class="developer-footer-block py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto text-center d-flex align-items-center flex-wrap justify-content-center">
+
+                <span class="d-inline-flex align-items-center text-decoration-none me-3"
+                    target="_blank" title="Создаем сайты, которые работают">
+                    <span class="label-text me-2" style="font-size: 0.75rem; color: #fff;">Разработано в</span>
+
+                    <!-- <svg class="sfera-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617.7 617.7" width="26"
+                        height="26">
+                        <circle fill="#393185" stroke="#2B2A29" stroke-width="0.4" cx="308.8" cy="308.8" r="308.6" />
+                        <path fill="#00A0E3" stroke="#2B2A29" stroke-width="0.4"
+                            d="M398.7 102.6l31.3 56.6 31.4 56.7H335.9l31.4-56.7zM197.8 510.9l31.4-56.6 31.4-56.6H135.1l31.3 56.6z" />
+                        <path fill="#FEFEFE" stroke="#2B2A29" stroke-width="0.4"
+                            d="M238.1 499.4l40.6-74.9h89.2s26.3-5.7 30.9-33.7c4.5-28-24.1-41.8-24.1-41.8 0 0-5.7-4.5-22.8-4-17.2.6-100.6 1.2-100.6 1.2 0 0-24.6-.6-55.5-21.2-30.8-20.5-45.6-59.6-49.1-97.7-3.5-38.1 38.7-111.9 101.2-111.2l111.7 1.3s-45.6 75-42.1 74.9l-63.1-1.3s-26.9 3.3-32.2 39.5c-5.2 36.1 38.8 38.7 42.1 38.8l115 1.3c72.6.8 99.6 58.8 94.2 122.4-5.5 63.6-45.7 97.3-96.2 105.6-25.3 4.2-139.2.8-139.2.8z" />
+                    </svg> -->
+
+                    <span class="brand-text ms-2 fw-bold text-white"
+                        style="font-size: 0.85rem; text-transform: uppercase;">okai</span>
+                </span>
+
+                <div class="support-status align-items-center me-3">
+                    <span class="status-dot me-2"></span>
+                    <span style="font-size: 0.7rem; color: #28a745;">Поддержка 24/7</span>
+                </div>
+
+                <div id="bottomFormPanel"
+                    class="fixed-bottom bg-dark border-top border-primary p-3 p-md-4 shadow-lg transform-hidden"
+                    style="z-index: 1050;">
+                    <div class="container position-relative">
+
+                        <button type="button" id="closeFormBtn"
+                            class="btn-close btn-close-white position-absolute top-0 end-0 m-2" aria-label="Close"
+                            style="font-size: 0.8rem; opacity: 0.5;"></button>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="row g-2 align-items-end">
+                                    <div class="col-md-10 col-10">
+                                        <input type="text" id="userMessage"
+                                            class="form-control bg-secondary text-white border-0 shadow-none"
+                                            placeholder="Ваш вопрос..." style="border-radius: 8px; height: 45px;">
+                                    </div>
+
+                                    <div class="col-md-2 col-2">
+                                        <button id="sendBtn"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center"
+                                            style="height: 45px; border-radius: 8px;">
+                                            <svg viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                style="width: 24px; height: 24px;">
+                                                <path
+                                                    d="M9.00977 21.39H19.0098C20.0706 21.39 21.0881 20.9685 21.8382 20.2184C22.5883 19.4682 23.0098 18.4509 23.0098 17.39V7.39001C23.0098 6.32915 22.5883 5.31167 21.8382 4.56152C21.0881 3.81138 20.0706 3.39001 19.0098 3.39001H7.00977C5.9489 3.39001 4.93148 3.81138 4.18134 4.56152C3.43119 5.31167 3.00977 6.32915 3.00977 7.39001V12.39"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M1.00977 18.39H11.0098" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M1.00977 15.39H5.00977" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22.209 5.41992C16.599 16.0599 9.39906 16.0499 3.78906 5.41992"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mt-1" style="min-height: 18px;">
+                                    <p id="status" class="small mb-0 text-info" style="font-size: 0.75rem;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const openBtn = document.querySelector('.support-status');
+        const closeBtn = document.getElementById('closeFormBtn');
+        const panel = document.getElementById('bottomFormPanel');
+
+        const inputMsg = document.getElementById('userMessage');
+        const status = document.getElementById('status');
+        const sendBtn = document.getElementById('sendBtn');
+
+        if (openBtn) {
+            openBtn.addEventListener('click', () => {
+                panel.classList.add('show-panel');
+                inputPhone.focus();
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => panel.classList.remove('show-panel'));
+        }
+
+        sendBtn.addEventListener('click', async () => {
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwS-SDw75MOzkS5BQB-1iHqxPAFa1233VCtBce5tJH0-WPPPHYTJUuLe7-KyKkhv63XoA/exec";
+
+            status.style.color = "#00d4ff";
+            status.innerText = "Отправка...";
+
+            const payload = {
+                message: inputMsg.value.trim(),
+                domain: window.location.href
+            };
+
+            try {
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                status.style.color = "#28a745";
+                status.innerText = "Успешно отправлено!";
+
+                inputMsg.value = "";
+
+                setTimeout(() => {
+                    panel.classList.remove('show-panel');
+                    setTimeout(() => { status.innerText = ""; }, 500);
+                }, 1500);
+
+            } catch (error) {
+                status.style.color = "#ff4d4d";
+                status.innerText = "Ошибка при отправке.";
+                console.error('Ошибка:', error);
+            }
+        });
+    });
+</script>
+</body>
+
+</html>
